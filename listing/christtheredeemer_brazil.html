@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Christ the Redeemer</title>
+  <link rel="stylesheet" type="text/css" href="../css/fontawesome-free-5.5.0-web/css/all.css">
+  <link rel="stylesheet" type="text/css" href="../css/travel_trails.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/logo.ico" />
+</head>
+<style>
+</style>
+<script type="text/javascript">
+  var current_url=location.href;
+if(localStorage.length==0){
+  localStorage.setItem("url",current_url);
+  window.location.assign("../loading.html");
+}
+else{
+  localStorage.clear();
+}
+</script>
+
+<body style="background-color: #001a33;">
+<header>
+<div class="mainhead">
+  <canvas id="myCanvas" width="1200px;">Your Browser does not support canvas</canvas>
+</div>
+
+<ul>
+  <li class="nav"><a href="../home.php">Home</a></li>
+  <li class="nav"><a href="../search.php">Search</a></li>
+  <li class="nav"><a href="../contact.html">Contact</a></li>
+  <li class="nav"><a href="../about.html">About</a></li>
+  <li class="nav" style="float: right;"><button onclick="document.getElementById('modal').style.display='block'" class="navlogbtn" 
+  style="width:auto;">Login</button></li>
+  <li class="nav" style="float: right;"><a href="../entryform.php">Submit a Review</a></li>
+</ul>
+</header>
+
+<p align="center" class="heady" style="font-size: 50px; color:white;">Christ the Redeemer</p>
+
+<div class="templatebox">
+  <p align="center" class="heady" style="font-size: 40px;">Brazil</p>
+
+  <p class="heady">Reviewed by: Kevin Arulraj</p>
+
+  <div class="heady">Date Visited: 21/04/2004</div><br>
+
+  <p class="heady" style="font-size: 20px; padding: 0 30px; font-family: 'Times New Roman";>
+See the famous landmarks of Rio de Janeiro on an express 4-hour day tour with a multilingual guide. Your day will start with a pick-up at your hotel by your professional tour guide and driver, before you make your first stop up through the Tijuca Rainforest, traveling up towards Christ the Redeemer.
+
+Built by Brazilian engineer Heitor da Silva Costa in 1922, this statue is a landmark figure of Rio de Janeiro and is also known all around the world. You will have time up here to take photos and appreciate the scenery, before descending back down into the city.
+
+Once back in town, you will venture through the city visiting other famous landmarks such as the Mirante Dona Marta, Catedral Metropolitana, Maracanã (you will see from the outside), the carnival Sambódromo, Lapa and the Escadaria Selaron stairs. At the conclusion of your tour, you will be dropped off safely back to your hotel. 
+  </p><br>
+  
+  <div>  
+  <label for="date" style="margin-left: 20px;">Hygiene: 6/10</label>
+  <input type="range" min="0" max="10" value="6" class="slider" id="hygiene" disabled><br><br><br>
+
+  <label for="date" style="margin-left: 20px;">Hospitality: 8/10</label>
+  <input type="range" min="0" max="10" value="8" class="slider" id="hospitality" disabled><br><br><br>
+
+  <label for="date" style="margin-left: 20px;">Pricing: 10/10</label>  
+  <input type="range" min="0" max="10" value="10" class="slider" id="pricing" disabled><br><br><br>
+
+  <label for="date" style="margin-left: 20px;">Food: 9/10</label>  
+  <input type="range" min="0" max="10" value="9" class="slider" id="food" disabled><br><br><br><br><br>
+  </div>
+
+
+  <img src="../images/christtheredeemer.jpg" width="650" height="300">
+
+
+  <span class="fa fa-star checked" style="margin-left: 275px; margin-top:50px; " id="1"></span>
+  <span class="fa fa-star checked" id="2"></span>
+  <span class="fa fa-star checked" id="3"></span>
+  <span class="fa fa-star checked" id="4"></span>
+  <span class="fa fa-star" id="5"></span>
+
+</div>
+
+
+<button class="navlogbtn" style="margin-top:200px;" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div class="mainhead" style=" text-align: center;color: black;font-size: 30px;">
+<i class="fab fa-instagram"></i>
+<i class="fab fa-facebook"></i>
+<i class="fab fa-snapchat"></i>
+<i class="fab fa-pinterest"></i>
+<i class="fab fa-linkedin"></i>
+<i class="fab fa-twitter"></i>     
+</div>
+
+
+<div id="modal" class="modal">
+  
+  <form class="modal-content animate" action="loginverify.php">
+    <div class="imgcontainer">
+      <img src="../images/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="logincontainer">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" class="loginfield" required >
+
+      <label for="psw" style="padding-top: 16px;"><b>Password</b></label>
+      <input type="password" style="margin-bottom: 20px;" placeholder="Enter Password" name="psw" class="loginfield" required>
+        
+      <button type="button" onclick="location.href='../register.html'" class="modalbtn">Register</button>
+      <button type="submit" class="modalbtn">Login</button>
+    </div>
+  </form>
+</div>
+
+</body>
+
+<script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+ctx.font = "75px Impact";
+ctx.fillText("Travel Trails", 350, 80);
+
+ctx.font = "25px Monotype Corsiva";
+ctx.fillText("Making travellers happy since 1969", 650, 110);
+
+window.onload = function() {
+    var c=document.getElementById("myCanvas");
+    var ctx=c.getContext("2d");
+    var img=new Image();
+    img.onload = function () {
+    ctx.drawImage(img,0,0,200,200);
+    } 
+    img.src = "images/log.jpg";    
+};
+
+var modal = document.getElementById('modal');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+  
+</script>
+</html>

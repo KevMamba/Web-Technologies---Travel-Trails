@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel Trails</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo.ico" />
+</head>
+<style type="text/css">
+img{
+		vertical-align: middle;
+		align-self: center;
+		border-radius: 50%;
+	}
+</style>
+<body style="background-color:#e9ecef">
+<div id="loader">
+<center><img src="images/spinner.gif" alt="Lil Pin" style="width:600px;height:600px;"></center>
+</div>
+
+<script type="text/javascript">
+  setTimeout(function(){
+  		url=localStorage.getItem("url"); 
+  		window.location.assign(url);
+  	},1000);
+</script>
+</body>
+</html>

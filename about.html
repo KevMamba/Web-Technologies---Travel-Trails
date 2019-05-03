@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<link rel="stylesheet" type="text/css" href="css/fontawesome-free-5.5.0-web/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/travel_trails.css">
+	<link rel="shortcut icon" type="image/x-icon" href="images/logo.ico" />
+</head>
+<style>
+
+.hover-opacity:hover{
+	opacity: 0.60;
+}
+
+.team{
+	text-align:center; 
+	padding: 60px;
+	margin: 30px ; 
+}
+
+.one-third{
+	float:left;
+	width: 33.33333%;
+	background-color:  #e9ecef;
+	min-height: 450px;
+	border-radius: 25px;
+}
+
+</style>
+
+<script type="text/javascript" src="JS/loading.js"></script>
+
+<body style="background-color: #001a33;">
+<header>
+<div class="mainhead">
+  <canvas id="myCanvas" width="1200px;">Your Browser does not support canvas</canvas>
+</div>
+
+<ul>
+  <li class="nav"><a href="home.php">Home</a></li>
+  <li class="nav"><a href="search.php">Search</a></li>
+  <li class="nav"><a href="contact.html">Contact</a></li>
+  <li class="nav"><a href="about.html" class="active">About</a></li>
+  <li class="nav" style="float: right;"><button onclick="document.getElementById('modal').style.display='block'" class="navlogbtn" 
+  style="width:auto;">Login</button></li>
+  <li class="nav" style="float: right;"><a href="entryform.php">Submit a Review</a></li>
+</ul>
+</header>
+
+	<div class="mainhead" style="text-align: center!important; padding: 10px; margin: 10px; margin-top: 60px;">
+	<h1><b>About Us</b></h1>
+	
+	<p style="font-size: 24px;">At Travel Trails, we aspire to give our customers a world class tourism experience. We aim to provide tourists a seamless tourism experience with the best amenities and comfort. Through Travel Trails, customers can compare their desired destinations and can share their experiences on our online forum.</p>
+	</div>
+
+<div class="team mainhead" style="border-radius: 25px;"> 
+	<h2>OUR TEAM</h2>
+	<p>Meet the team - our office rats:</p>
+
+	<div><br>
+		<div class="one-third" style="border-bottom-right-radius: 0;">
+		<img src="images/Sriram.jpg" alt="Lead Dev" style="width:50%; border-radius: 50%;" 
+			 class="hover-opacity">
+		 	<h3>Sriram S K</h3>
+		<p>Lead Dev</p>
+		<p2><b> Sriram S K</b>, an adventurous young sophomore at PES University, is a lover of nature and adventure. His passion is travelling and visiting new places, he wants people to see the world the way he does!</p2>
+		</div>
+	 
+
+		<div class="one-third" style="border-bottom-right-radius: 0; border-bottom-left-radius: 0;">
+		  <img src="images/suhaask.jpg" alt="Glorified Intern" style="width:50%;border-radius: 50%;" 
+			 class="hover-opacity">
+		  <h3>Suhaas K</h3>
+		  <p>Glorified Intern</p>
+		  <p><b>Suhaas K</b>, an excellent and ambitious strategist has shown his enthusiasm for Travel Trails. With his exciting itineraries you and your family are in for a ride! He has visited a vast majority of our tourist destinations and is the go-to man for any information.</p>
+		</div>
+
+		<div class="one-third" style="border-bottom-left-radius: 0;">
+		  <img src="images/kevin.jpg" alt="Boss" style="width:50%;border-radius: 50%;" 
+			 class="hover-opacity">
+		    <h3>Kevin Arulraj</h3>
+		  <p>Boss Man</p>
+		  <p><b>Kevin Arulraj</b> (formerly known as Beith Bevin Arulraj), is loves technology and does his best in incorporating technology into any and every part of his life to make it better. His innovative methods have helped digitise Travel Trails and give the users a seamless and wonderful new experience with tourism.</p>
+		</div>
+
+	</div>
+</div>
+
+
+<button class="navlogbtn" style="margin-top:500px;" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div class="mainhead" style="text-align: center;color: black;font-size: 30px;">
+<i class="fab fa-instagram"></i>
+<i class="fab fa-facebook"></i>
+<i class="fab fa-snapchat"></i>
+<i class="fab fa-pinterest"></i>
+<i class="fab fa-linkedin"></i>
+<i class="fab fa-twitter"></i>     
+</div>
+
+<div id="modal" class="modal">
+  
+ <form class="modal-content animate" action="loginverify.php" method="POST" enctype="multipart/form-data">
+    <div class="imgcontainer">
+      <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="logincontainer">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" class="loginfield" required >
+
+      <label for="psw" style="padding-top: 16px;"><b>Password</b></label>
+      <input type="password" style="margin-bottom: 20px;" placeholder="Enter Password" name="psw" class="loginfield" required>
+        
+      <button type="button" onclick="location.href='register.html'" class="modalbtn">Register</button>
+      <button type="submit" class="modalbtn">Login</button>
+    </div>
+  </form>
+</div>
+
+</body>
+
+<script type="text/javascript" src="JS/canvas.js"></script>
+<script type="text/javascript" src="JS/modal.js"></script>
+</html>
